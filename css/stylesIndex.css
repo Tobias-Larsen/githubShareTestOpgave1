@@ -5,11 +5,13 @@
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 
 html {
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 body {
     margin: 0; /* Ingen kanter i siden af browser */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,3 +40,66 @@ img {
     max-width: 100%; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
+
+
+
+div{
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+div:before{
+    content: 'Det her tager lang tid, men det var lige det bedste jeg kunne finde på';
+    height: 50px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+
+div:after{
+    content: 'Det var godt du ventede til den var færdig';
+    height: 30px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
